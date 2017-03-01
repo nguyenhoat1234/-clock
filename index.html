@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>SMF Share Notification</title>
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+        <link rel="shortcut icon" href="img/logo.png"/>
+        
+    </head>
+    
+    <body>
+    	<div class="container-fluid">
+            <span style="border:1px solid #000;margin-left:5px" >Day</span>
+            <span style="border:1px solid #000; margin-left:5px">Hours</span>
+            <span style="border:1px solid #000; margin-left:5px">Minute</span>
+            <span style="border:1px solid #000; margin-left:5px">Seconds</span>
+            
+            <span style="border:1px solid #000;margin-left:15px; background-color:#ffff; font-size:18px" id="days">00</span>
+            <span style="border:1px solid #000; margin-left:15px;background-color:#ffff;font-size:18px" id="hours" >00</span>
+            <span style="border:1px solid #000; margin-left:15px;background-color:#3399ff;font-size:18px" id="minutes">00</span>
+            <span style="border:1px solid #000; margin-left:15px;background-color:#3399ff;font-size:18px" id="seconds">00</span>
+            
+		<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/style.js"></script>
+        <script>
+        	countdown('03/10/2017',['days','hours','minutes','seconds'],function(){
+				console.log('done');	
+			})
+        </script>
+    </body>
+</html>
